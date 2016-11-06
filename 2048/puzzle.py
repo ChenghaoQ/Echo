@@ -39,10 +39,10 @@ class GameGrid(Frame):
                             KEY_UP_ALT: up, KEY_DOWN_ALT: down, KEY_LEFT_ALT: left, KEY_RIGHT_ALT: right }
 
         self.grid_cells = []
-        #self.init_grid()
-        #self.init_matrix()
-        #self.update_grid_cells()
-        
+        self.init_grid()
+        self.init_matrix()
+        self.update_grid_cells()
+       
         #self.mainloop()
 
     def init_grid(self):
