@@ -38,7 +38,7 @@ def game(action):
 	global gamegrid
 	if action in ['left','right','up','down']:
 		try:
-			#direc = action
+
 			gamegrid.key_down(action)
 			
 		except:
@@ -48,40 +48,9 @@ def game(action):
 
 	return question('invalid action,please try again')
 
-"""
 
-def listener():
-	global direc
+app.run()
 
-	global gamegrid
-	tmp = direc
-	while True:
-		try:
-
-			if direc != tmp:
-				
-				gamegrid.key_down(direc)
-				tmp = direc
-			if direc == 'stop':
-				break
-		
-		except:
-			pass
-		
-
-"""
-
-
-#gamegrid.init_grid()
-#gamegrid.init_matrix()
-#gamegrid.update_grid_cells()
-#input()
-
-
-f = Thread(target = app.run)
-f.start()
-#listener()
-f.join()
 
 
 
